@@ -7,7 +7,6 @@
 <meta name="theme-color" content="#FAF7F1">
 <meta name="robots" content="noindex, nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏡%3C/text%3E%3C/svg%3E">
-
 <style>
 /* ============ tokens ============ */
 :root{
@@ -27,7 +26,7 @@
   --dot-rose:#C05B52; --dot-blue:#42789F; --dot-apricot:#D08A3A; --dot-family:#9A8B76;
   --shadow-s:0 1px 2px rgba(80,62,42,.05), 0 2px 6px rgba(80,62,42,.035);
   --shadow-m:0 2px 4px rgba(80,62,42,.045), 0 14px 30px -12px rgba(80,62,42,.16);
-  --r-xl:26px; --r-lg:22px; --r-md:16px; --r-sm:12px;
+  --r-xl:12px; --r-lg:12px; --r-md:8px; --r-sm:8px;
   --ease:cubic-bezier(.22,1,.36,1);
 }
 *{box-sizing:border-box}
@@ -60,7 +59,7 @@ h1,h2,h3,p{margin:0}
 .topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:22px}
 .brand{display:flex;align-items:center;gap:14px;min-width:0}
 .brand-mark{
-  width:58px;height:58px;flex:none;border-radius:20px;display:grid;place-items:center;font-size:27px;
+  width:58px;height:58px;flex:none;border-radius:8px;display:grid;place-items:center;font-size:27px;
   background:linear-gradient(150deg,#FFF1DC 0%,#FCE3D3 60%,#F9DCD3 100%);
   border:1px solid #F3E0C9;box-shadow:var(--shadow-s), inset 0 1px 0 #fff
 }
@@ -70,7 +69,7 @@ h1,h2,h3,p{margin:0}
 .topbar-side{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .ddays{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
 .pill{
-  display:inline-flex;align-items:center;gap:8px;padding:8px 13px 8px 11px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:8px;padding:8px 13px 8px 11px;border-radius:6px;
   background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-s);font-size:12.5px;font-weight:650;color:var(--ink-2)
 }
 .pill .dday{font-weight:800;font-size:12.5px;letter-spacing:-.01em}
@@ -80,7 +79,7 @@ h1,h2,h3,p{margin:0}
 .pill.mint .dday{color:#2F6E5C}
 .actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}
 .btn{
-  display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:11px;
+  display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:8px;
   background:#fff;border:1px solid var(--line);color:var(--ink-2);font-size:12.5px;font-weight:650;
   transition:background .18s var(--ease),border-color .18s,transform .18s,color .18s
 }
@@ -107,7 +106,7 @@ h1,h2,h3,p{margin:0}
 .card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
 .card-title{display:flex;align-items:center;gap:9px;font-size:15.5px;font-weight:780;letter-spacing:-.015em}
 .ico{
-  width:30px;height:30px;border-radius:11px;display:grid;place-items:center;font-size:15px;
+  width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:15px;
   background:#FBF3E6;border:1px solid #F2E6D4;flex:none
 }
 .card-note{font-size:12px;color:var(--ink-3);font-weight:600}
@@ -115,13 +114,13 @@ h1,h2,h3,p{margin:0}
 /* ============ calendar ============ */
 .monthnav{display:flex;align-items:center;gap:5px}
 .navbtn{
-  width:30px;height:30px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink-2);
+  width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ink-2);
   display:grid;place-items:center;font-size:13px;transition:background .16s,border-color .16s
 }
 .navbtn:hover{background:#FBF4E8;border-color:var(--line-2)}
 .monthlabel{font-size:14px;font-weight:780;min-width:108px;text-align:center;letter-spacing:-.01em}
 .todaylink{
-  height:30px;padding:0 11px;border-radius:10px;border:1px solid var(--line);background:#fff;
+  height:30px;padding:0 11px;border-radius:8px;border:1px solid var(--line);background:#fff;
   font-size:12px;font-weight:700;color:var(--ink-2);margin-left:3px
 }
 .todaylink:hover{background:#FBF4E8}
@@ -133,7 +132,7 @@ h1,h2,h3,p{margin:0}
 
 .cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
 .cell{
-  position:relative;min-width:0;min-height:84px;border-radius:15px;border:1px solid transparent;background:#FCF9F3;
+  position:relative;min-width:0;min-height:84px;border-radius:8px;border:1px solid transparent;background:#FCF9F3;
   padding:6px 7px 7px;display:flex;flex-direction:column;gap:3px;text-align:left;
   transition:background .16s,border-color .16s,box-shadow .16s,transform .16s
 }
@@ -145,7 +144,7 @@ h1,h2,h3,p{margin:0}
 .cell.today .dnum{background:var(--ink);color:#fff;box-shadow:0 2px 6px rgba(44,38,34,.22)}
 .cell.other.today{opacity:1}
 .dnum{
-  width:25px;height:25px;border-radius:9px;display:grid;place-items:center;
+  width:25px;height:25px;border-radius:6px;display:grid;place-items:center;
   font-size:12.5px;font-weight:750;color:var(--ink-2);flex:none
 }
 .cell.sun .dnum{color:#B65B54}
@@ -182,45 +181,45 @@ h1,h2,h3,p{margin:0}
 .dp-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:11px;flex-wrap:wrap}
 .dp-date{display:flex;align-items:baseline;gap:8px;font-size:14.5px;font-weight:780;letter-spacing:-.015em}
 .dp-week{font-size:12px;font-weight:700;color:var(--ink-3)}
-.dp-count{font-size:11.5px;font-weight:700;color:var(--ink-3);background:#F7F2E8;border-radius:999px;padding:3px 9px}
+.dp-count{font-size:11.5px;font-weight:700;color:var(--ink-3);background:#F7F2E8;border-radius:6px;padding:3px 9px}
 .dp-list{display:flex;flex-direction:column;gap:7px}
 .dp-item{
-  display:flex;align-items:center;gap:10px;padding:9px 10px 9px 12px;border-radius:14px;
+  display:flex;align-items:center;gap:10px;padding:9px 10px 9px 12px;border-radius:8px;
   background:var(--card-2);border:1px solid #F2EBDF
 }
 .dp-time{font-size:12px;font-weight:750;color:var(--ink-2);min-width:40px}
 .dp-time.none{color:#BFB3A2}
 .dp-title{flex:1;font-size:13.5px;font-weight:640;line-height:1.4}
-.dp-who{font-size:11px;font-weight:750;padding:3px 9px;border-radius:999px;flex:none}
+.dp-who{font-size:11px;font-weight:750;padding:3px 9px;border-radius:6px;flex:none}
 .dp-who.t-rose{background:var(--rose-soft);color:var(--rose-deep)}
 .dp-who.t-blue{background:var(--blue-soft);color:var(--blue-deep)}
 .dp-who.t-apricot{background:var(--apricot-soft);color:var(--apricot-deep)}
 .dp-who.t-family{background:#F2EEE7;color:#5C5248}
 .del{
-  width:26px;height:26px;border-radius:9px;border:none;background:transparent;color:#B6A896;
+  width:26px;height:26px;border-radius:6px;border:none;background:transparent;color:#B6A896;
   display:grid;place-items:center;font-size:14px;flex:none;opacity:0;transition:opacity .15s,background .15s,color .15s
 }
 .dp-item:hover .del,.todo:hover .del,.shop-item:hover .del{opacity:1}
 .del:hover{background:#FBEAE6;color:#A8463C}
 .empty{
-  font-size:12.5px;color:var(--ink-3);text-align:center;padding:16px 12px;border-radius:14px;
+  font-size:12.5px;color:var(--ink-3);text-align:center;padding:16px 12px;border-radius:8px;
   background:var(--card-2);border:1px dashed var(--line-2);font-weight:600
 }
 .addtoggle{
-  display:inline-flex;align-items:center;gap:5px;height:31px;padding:0 11px;border-radius:10px;
+  display:inline-flex;align-items:center;gap:5px;height:31px;padding:0 11px;border-radius:8px;
   border:1px solid #E7D3B2;background:#FFFBF3;color:#7A4C13;font-size:12px;font-weight:750
 }
 .addtoggle:hover{background:#FFF4E0}
 .addform{display:grid;grid-template-columns:104px minmax(0,1fr) 108px auto auto;gap:7px;margin-top:10px;align-items:center}
 .fld{
-  height:36px;border-radius:11px;border:1px solid var(--line-2);background:#fff;padding:0 10px;
+  height:36px;border-radius:8px;border:1px solid var(--line-2);background:#fff;padding:0 10px;
   font-size:12.5px;color:var(--ink);min-width:0;transition:border-color .15s,box-shadow .15s
 }
 .fld::placeholder{color:#A1927C}
 .fld:focus{outline:none;border-color:#C9AF83;box-shadow:0 0 0 3px #F8EEDC}
 select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#9A8D7C 50%),linear-gradient(135deg,#9A8D7C 50%,transparent 50%);background-position:calc(100% - 15px) 15px,calc(100% - 10px) 15px;background-size:5px 5px;background-repeat:no-repeat;padding-right:26px}
 .mini{
-  height:36px;padding:0 13px;border-radius:11px;border:1px solid #E7D3B2;background:linear-gradient(180deg,#FFFDF8,#FFF2DC);
+  height:36px;padding:0 13px;border-radius:8px;border:1px solid #E7D3B2;background:linear-gradient(180deg,#FFFDF8,#FFF2DC);
   color:#7A4C13;font-size:12.5px;font-weight:750
 }
 .mini:hover{background:linear-gradient(180deg,#FFF8EC,#FFEBCF)}
@@ -235,14 +234,14 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .wx-cond{margin-top:5px;font-size:12.5px;font-weight:700;color:var(--ink-2)}
 .wx-cond .hl{color:#2F6E5C}
 .wx-hours{display:flex;gap:6px;margin-top:14px}
-.wx-hours span{flex:1;text-align:center;background:#fff;border:1px solid var(--line);border-radius:11px;padding:6px 2px;font-size:11px;font-weight:750;color:var(--ink-2)}
+.wx-hours span{flex:1;text-align:center;background:#fff;border:1px solid var(--line);border-radius:8px;padding:6px 2px;font-size:11px;font-weight:750;color:var(--ink-2)}
 .wx-hours b{display:block;font-size:9.5px;font-weight:700;color:var(--ink-3);margin-bottom:1px;letter-spacing:0}
 .wx-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
-.wx-stat{background:var(--card-2);border:1px solid #F2EBDF;border-radius:13px;padding:9px 10px}
+.wx-stat{background:var(--card-2);border:1px solid #F2EBDF;border-radius:8px;padding:9px 10px}
 .wx-stat dt{font-size:10.5px;font-weight:700;color:var(--ink-3)}
 .wx-stat dd{margin:3px 0 0;font-size:12.5px;font-weight:750;color:var(--ink)}
 .wx-note{
-  margin-top:13px;display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:13px;
+  margin-top:13px;display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:8px;
   background:#EFF6FA;border:1px solid #DCEBF3;font-size:12px;font-weight:640;color:#2A5A78;line-height:1.45
 }
 .attr{margin-top:10px;font-size:10px;color:#948779}
@@ -253,7 +252,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .up{display:flex;align-items:center;gap:11px;padding:9px 4px;border-bottom:1px dashed #F3EDE2}
 .up:last-child{border-bottom:none;padding-bottom:2px}
 .up-date{
-  width:46px;flex:none;text-align:center;background:var(--card-2);border:1px solid #F0E8DA;border-radius:11px;
+  width:46px;flex:none;text-align:center;background:var(--card-2);border:1px solid #F0E8DA;border-radius:8px;
   padding:5px 0
 }
 .up-date b{display:block;font-size:13px;font-weight:800;line-height:1.1;letter-spacing:-.02em}
@@ -261,7 +260,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .up-body{min-width:0;flex:1}
 .up-title{font-size:12.5px;font-weight:700;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .up-meta{font-size:11px;color:var(--ink-3);font-weight:650;margin-top:2px}
-.up-d{margin-left:auto;font-size:11px;font-weight:800;color:#7A4C13;background:var(--gold-soft);border:1px solid #F3E3BE;border-radius:999px;padding:3px 8px;flex:none}
+.up-d{margin-left:auto;font-size:11px;font-weight:800;color:#7A4C13;background:var(--gold-soft);border:1px solid #F3E3BE;border-radius:6px;padding:3px 8px;flex:none}
 
 /* ============ members ============ */
 .mcard{display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(180deg,var(--tone-head) 0px, rgba(255,255,255,0) 132px)}
@@ -272,7 +271,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .m-head{display:flex;align-items:center;gap:11px;margin-top:4px}
 .m-head > div:not(.avatar):not(.m-stars){display:flex;flex-direction:column;justify-content:center;min-height:33px}
 .avatar{
-  width:54px;height:54px;border-radius:19px;flex:none;display:grid;place-items:center;
+  width:54px;height:54px;border-radius:10px;flex:none;display:grid;place-items:center;
   background:var(--tone-soft);border:1px solid var(--tone-line)
 }
 .avatar svg{width:44px;height:44px;display:block}
@@ -280,7 +279,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .m-role{font-size:11px;font-weight:700;color:var(--ink-3);margin-top:3px;letter-spacing:.01em}
 .m-stars{
   margin-left:auto;display:inline-flex;align-items:center;gap:4px;flex:none;
-  background:var(--gold-soft);border:1px solid #F2E1B9;border-radius:999px;padding:5px 9px;
+  background:var(--gold-soft);border:1px solid #F2E1B9;border-radius:6px;padding:5px 9px;
   font-size:12px;font-weight:800;color:#7A4C13
 }
 .m-stars .s{font-size:13px;line-height:1;color:#DFA02F;transition:transform .2s var(--ease)}
@@ -291,10 +290,10 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .track{height:8px;border-radius:99px;background:#F3EDE2;overflow:hidden}
 .fill{height:100%;border-radius:99px;width:0;background:linear-gradient(90deg,var(--tone-mid),var(--tone));transition:width .5s var(--ease)}
 .todos{display:flex;flex-direction:column;gap:1px;margin:6px 0 0}
-.todo{display:flex;align-items:flex-start;gap:9px;padding:8px 6px;border-radius:12px;transition:background .15s}
+.todo{display:flex;align-items:flex-start;gap:9px;padding:8px 6px;border-radius:8px;transition:background .15s}
 .todo:hover{background:#FBF7F0}
 .cbx{
-  width:22px;height:22px;flex:none;border-radius:8px;border:1.6px solid #DCCFBB;background:#fff;
+  width:22px;height:22px;flex:none;border-radius:6px;border:1.6px solid #DCCFBB;background:#fff;
   display:grid;place-items:center;transition:background .18s,border-color .18s,transform .18s;margin-top:1px
 }
 .cbx svg{width:13px;height:13px;opacity:0;transform:scale(.6);transition:opacity .16s,transform .22s var(--ease);color:#fff}
@@ -305,38 +304,58 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .todo.done .todo-label{color:#A0937F;text-decoration:line-through;text-decoration-thickness:1.4px;text-decoration-color:#CFC3B0}
 .todo-note{display:inline-flex;align-items:center;gap:4px;margin-top:4px;font-size:10.5px;font-weight:750;color:var(--tone-deep);background:var(--tone-soft);border-radius:6px;padding:2px 6px}
 .todo .del{margin-top:0;width:24px;height:24px}
-.addrow{display:flex;gap:6px;margin-top:10px}
+.addrow{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
 .mcard .addrow{margin-top:auto;padding-top:10px}
 .addrow .fld{flex:1;height:35px;font-size:12px}
 .addrow .mini{height:35px;padding:0 11px}
 .celebrate{
-  margin-top:11px;display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:13px;
+  margin-top:11px;display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:8px;
   background:linear-gradient(100deg,#FFF6DC,#FFECE4 65%,#F4ECFF);border:1px solid #F4DFB8;
   font-size:12px;font-weight:780;color:#7A4C13;animation:pop .42s var(--ease)
 }
 .celebrate .em{font-size:14px}
-.allergy{
-  display:inline-flex;align-items:center;gap:6px;margin-top:9px;padding:6px 11px;border-radius:999px;
-  background:#FFF1EB;border:1px solid #F6D4C6;color:#9B3E22;font-size:11px;font-weight:780
+/* 윤슬 카드: 매일 / 가끔 구분 */
+.tsect{margin-top:12px}
+.tsect + .tsect{margin-top:14px;padding-top:12px;border-top:1px dashed var(--tone-line)}
+.tsect-head{display:flex;align-items:center;gap:6px;margin-bottom:3px;padding:0 6px}
+.tsect-title{font-size:11.5px;font-weight:800;color:var(--tone-deep);letter-spacing:.005em}
+.tsect-count{margin-left:auto;font-size:10.5px;font-weight:750;color:var(--ink-3)}
+.tsect .empty{padding:10px;font-size:11.5px}
+.freqtog{display:inline-flex;flex:none;border:1px solid var(--line-2);border-radius:8px;overflow:hidden;background:#fff}
+.freqtog button{height:35px;padding:0 9px;border:none;background:transparent;font-size:11.5px;font-weight:750;color:var(--ink-3)}
+.freqtog button.on{background:var(--tone-soft);color:var(--tone-deep)}
+/* 일정 수정 */
+.edit{
+  width:26px;height:26px;border-radius:6px;border:none;background:transparent;color:#B6A896;
+  display:grid;place-items:center;font-size:12px;flex:none;line-height:1
 }
+.edit:hover{background:#F2ECE1;color:#6B5B47}
+.dp-item .del{opacity:1;color:#A3927C}
+.dp-item .del:hover{opacity:1}
+.dp-edit{
+  display:grid;grid-template-columns:100px minmax(0,1fr) 104px auto auto;gap:6px;align-items:center;
+  padding:8px 9px;border-radius:8px;background:#FFFCF5;border:1px solid #EADFCB
+}
+.dp-edit .fld{height:34px}
+.dp-edit .mini{height:34px;padding:0 11px}
 .mfooter{margin-top:12px;padding-top:11px;border-top:1px dashed var(--tone-line);display:flex;align-items:center;justify-content:space-between;gap:8px}
 .mfooter .hint{font-size:10.5px;font-weight:650;color:var(--ink-3)}
 .mfooter .hint b{font-weight:800;color:var(--ink-2)}
 .mfooter .stamp{font-size:16px;opacity:.5}
 
 /* ============ shopping & memo ============ */
-.count-badge{font-size:11px;font-weight:800;color:var(--ink-2);background:#F6F1E7;border-radius:999px;padding:3px 9px}
+.count-badge{font-size:11px;font-weight:800;color:var(--ink-2);background:#F6F1E7;border-radius:6px;padding:3px 9px}
 .shop-list{display:flex;flex-direction:column;gap:1px}
-.shop-item{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:11px;transition:background .15s}
+.shop-item{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:8px;transition:background .15s}
 .shop-item:hover{background:#FBF7F0}
 .shop-item.done .todo-label{color:#A0937F;text-decoration:line-through;text-decoration-thickness:1.4px;text-decoration-color:#CFC3B0}
-.shop-item .cbx{width:21px;height:21px;border-radius:7px;--tone:var(--mint)}
+.shop-item .cbx{width:21px;height:21px;border-radius:6px;--tone:var(--mint)}
 .shop-item.done .cbx{background:var(--mint);border-color:var(--mint);animation:pop .32s var(--ease)}
 .shop-item.done .cbx svg{opacity:1;transform:scale(1);color:#fff}
 .shop-item .cbx svg{color:#fff}
 .who-pills{display:flex;gap:5px;flex-wrap:wrap}
 .who-pill{
-  display:inline-flex;align-items:center;gap:5px;height:30px;padding:0 10px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:5px;height:30px;padding:0 10px;border-radius:6px;
   border:1px solid var(--line);background:#fff;font-size:11.5px;font-weight:750;color:var(--ink-2)
 }
 .who-pill.on{background:var(--rose-soft);border-color:#F0CEC7;color:var(--rose-deep)}
@@ -346,20 +365,26 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 .memo-form .fld{flex:1}
 .memo-list{display:flex;flex-direction:column;gap:8px;margin-top:13px}
 .memo{
-  display:flex;gap:9px;padding:10px 12px;border-radius:14px;background:var(--card-2);border:1px solid #F2EBDF;
+  display:flex;gap:9px;padding:10px 12px;border-radius:8px;background:var(--card-2);border:1px solid #F2EBDF;
   border-left:3px solid var(--tone,#DDD2C2)
 }
-.memo .mi{width:26px;height:26px;flex:none;border-radius:9px;display:grid;place-items:center;background:#fff;border:1px solid #F0E8DA}
+.memo .mi{width:26px;height:26px;flex:none;border-radius:6px;display:grid;place-items:center;background:#fff;border:1px solid #F0E8DA}
 .memo .mi svg{width:22px;height:22px}
 .memo-top{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:780;color:var(--ink-2)}
 .memo-time{font-size:10px;font-weight:650;color:#8B7F6E}
 .memo-text{font-size:12.5px;font-weight:620;line-height:1.5;margin-top:3px;color:var(--ink)}
 .memo-del{margin-left:auto;align-self:flex-start}
+/* 메모 삭제 버튼은 항상 보이게 (hover 전용 금지 · 모바일 포함) */
+.memo .memo-del{
+  opacity:1;width:26px;height:26px;border-radius:6px;font-size:13px;line-height:1;
+  background:#FBEFEB;border:1px solid #F3DCD3;color:#A8463C
+}
+.memo .memo-del:hover{background:#F7DCD4;border-color:#EFC9BE;color:#8E3B35}
 
 /* ============ toast ============ */
 .toast{
   position:fixed;left:50%;bottom:26px;transform:translateX(-50%) translateY(14px);
-  background:#332C26;color:#FFF9F0;font-size:12.5px;font-weight:700;padding:11px 16px;border-radius:13px;
+  background:#332C26;color:#FFF9F0;font-size:12.5px;font-weight:700;padding:11px 16px;border-radius:8px;
   box-shadow:0 12px 30px -8px rgba(40,32,24,.45);opacity:0;pointer-events:none;
   transition:opacity .22s,transform .28s var(--ease);z-index:90;max-width:calc(100vw - 40px);text-align:center
 }
@@ -387,7 +412,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 @media (max-width:760px){
   .wrap{padding:16px 14px 34px}
   .topbar{gap:12px;margin-bottom:14px}
-  .brand-mark{width:46px;height:46px;border-radius:16px;font-size:22px}
+  .brand-mark{width:46px;height:46px;border-radius:10px;font-size:22px}
   .brand h1{font-size:19.5px}
   .brand .sub{font-size:11.5px;gap:6px}
   .topbar-side{width:100%;align-items:flex-start}
@@ -395,10 +420,10 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
   .pill{font-size:11px;padding:6px 10px;gap:6px}
   .actions{justify-content:flex-start;width:100%}
   .btn{height:32px;font-size:11.5px;padding:0 10px}
-  .card{padding:15px;border-radius:20px}
+  .card{padding:15px;border-radius:8px}
   .card-head{margin-bottom:11px}
   .card-title{font-size:14px;gap:7px}
-  .ico{width:26px;height:26px;border-radius:9px;font-size:13px}
+  .ico{width:26px;height:26px;border-radius:6px;font-size:13px}
   .layout{gap:12px}
   .side{gap:12px;grid-template-columns:minmax(0,1fr)}
   .members,.bottom{gap:12px;margin-top:12px;grid-template-columns:minmax(0,1fr)}
@@ -409,14 +434,20 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
   .weekdays{gap:3px;margin-bottom:4px}
   .wd{font-size:10px}
   .cal{gap:3px}
-  .cell{min-height:47px;border-radius:10px;padding:3px 3px 4px;gap:2px;align-items:center}
-  .dnum{width:21px;height:21px;font-size:11px;border-radius:7px}
+  .cell{min-height:47px;border-radius:8px;padding:3px 3px 4px;gap:2px;align-items:center}
+  .dnum{width:21px;height:21px;font-size:11px;border-radius:6px}
   .chips{display:none}
   .dots{display:flex;gap:2.5px;justify-content:center;margin-top:2px;min-height:6px}
   .evdot{width:4.5px;height:4.5px}
   .dots .dot-more{font-size:8px;margin-left:0;letter-spacing:-.04em}
   .range-tag{display:none}
   .cell.inrange{background:#F4FAF7}
+  .dp-edit{grid-template-columns:1fr 1fr;gap:6px}
+  .dp-edit input[name="time"]{grid-column:1;grid-row:1}
+  .dp-edit select[name="who"]{grid-column:2;grid-row:1}
+  .dp-edit input[name="title"]{grid-column:1/-1;grid-row:2}
+  .dp-edit button[type="submit"]{grid-column:1;grid-row:3}
+  .dp-edit [data-edit-cancel]{grid-column:2;grid-row:3}
   .dp-date{font-size:13.5px}
   .dp-title{font-size:12.5px}
   .del{opacity:1}
@@ -429,7 +460,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
   .wx-ill{width:64px;height:64px}
   .wx-temp{font-size:32px}
   .m-head{gap:10px}
-  .avatar{width:48px;height:48px;border-radius:16px}
+  .avatar{width:48px;height:48px;border-radius:10px}
   .avatar svg{width:40px;height:40px}
   .m-name{font-size:14.5px}
   .todo-label{font-size:12.5px}
@@ -499,8 +530,8 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
           <input class="fld" type="time" id="evTime" aria-label="시간">
           <input class="fld" type="text" id="evTitle" placeholder="일정 제목 (예: 윤슬 태권도)" aria-label="일정 제목" maxlength="60" required>
           <select class="fld" id="evWho" aria-label="담당자">
-            <option value="jiseon">👩 지선</option>
             <option value="jeongun">👨 정윤</option>
+            <option value="jiseon" selected>👩 지선</option>
             <option value="yoonseul">👧 윤슬</option>
             <option value="family">👨‍👩‍👧 가족</option>
           </select>
@@ -602,7 +633,8 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     jeongun:  { key:"jeongun",  name:"정윤", role:"아빠",        tone:"blue",    toneVar:"blue" },
     yoonseul: { key:"yoonseul", name:"윤슬", role:"",              tone:"apricot", toneVar:"apricot" }
   };
-  const MEMBER_ORDER = ["jiseon","jeongun","yoonseul"];
+  // 표시 순서: 정윤(아빠) → 지선(엄마) → 윤슬
+  const MEMBER_ORDER = ["jeongun","jiseon","yoonseul"];
   const FAMILY = { key:"family", name:"가족", tone:"family" };
 
   const AVATARS = {
@@ -668,23 +700,24 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
       { id:"ev7", date:"2027-01-04", time:"09:00", title:"호주 모녀여행 출발 ✈️ 시드니", who:"jiseon" },
       { id:"ev8", date:"2027-01-21", time:"",      title:"호주 모녀여행 마지막 날 · 브리즈번", who:"jiseon" }
     ],
+    lastResetDate: null,       // 매일 루틴 자정 리셋 기준일(YYYY-MM-DD)
     todos: {
-      jiseon: [
-        { id:"td1", text:"모비스 공모전 발송 완료", done:true },
-        { id:"td2", text:"전시 만날 시간 장지현 님께 회신", done:false },
-        { id:"td3", text:"11/20 시드니대 캠프 오픈 확인", done:false }
-      ],
       jeongun: [
-        { id:"td4", text:"주간 가족 일정 확인하기", done:false },
-        { id:"td5", text:"장보기 함께 체크하기", done:false }
+        { id:"td4", text:"주간 가족 일정 확인하기", done:false, freq:"once" },
+        { id:"td5", text:"장보기 함께 체크하기", done:false, freq:"once" }
+      ],
+      jiseon: [
+        { id:"td1", text:"모비스 공모전 발송 완료", done:true, freq:"once" },
+        { id:"td2", text:"전시 만날 시간 장지현 님께 회신", done:false, freq:"once" },
+        { id:"td3", text:"11/20 시드니대 캠프 오픈 확인", done:false, freq:"once" }
       ],
       yoonseul: [
-        { id:"td6", text:"캠블리 키즈 20:30 수업 (Sharon)", done:false, note:"20:30" },
-        { id:"td7", text:"숙제 · 알림장 확인", done:false },
-        { id:"td8", text:"물통 · 내일 준비물 챙기기", done:false }
+        { id:"td7", text:"숙제 · 알림장 확인", done:false, freq:"daily" },
+        { id:"td8", text:"물통 · 내일 준비물 챙기기", done:false, freq:"daily" },
+        { id:"td6", text:"캠블리 키즈 20:30 수업 (Sharon)", done:false, note:"20:30", freq:"once" }
       ]
     },
-    stars: { jiseon:6, jeongun:4, yoonseul:9 },
+    stars: { jeongun:4, jiseon:6, yoonseul:9 },
     shopping: [
       { id:"sh1", text:"우유 1팩", done:true },
       { id:"sh2", text:"달걀 10구", done:false },
@@ -700,6 +733,20 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
 
   function clone(o){ return JSON.parse(JSON.stringify(o)); }
 
+  // 할 일 항목 정규화: freq("daily"|"once") 보정 (예전 저장분 마이그레이션 포함)
+  const DAILY_HINT = /숙제|알림장|물통|준비물|양치|일기/;
+  function normTodos(arr, fallback, isYoonseul){
+    const src = Array.isArray(arr) ? arr : fallback;
+    return src.filter(t => t && (t.text || t.id)).map(t => {
+      const o = Object.assign({}, t);
+      if(o.freq !== "daily" && o.freq !== "once"){
+        o.freq = (isYoonseul && DAILY_HINT.test(o.text || "")) ? "daily" : "once";
+      }
+      o.done = !!o.done;
+      return o;
+    });
+  }
+
   let state;
   function normalize(s){
     const d = clone(DEFAULT_STATE);
@@ -711,12 +758,13 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
       ddays: Array.isArray(s.ddays) ? s.ddays : d.ddays,
       ranges: Array.isArray(s.ranges) ? s.ranges : d.ranges,
       events: Array.isArray(s.events) ? s.events.filter(e=>e && e.date && e.title) : d.events,
+      lastResetDate: typeof s.lastResetDate === "string" ? s.lastResetDate : null,
       todos: {
-        jiseon: (s.todos && Array.isArray(s.todos.jiseon)) ? s.todos.jiseon : d.todos.jiseon,
-        jeongun:(s.todos && Array.isArray(s.todos.jeongun)) ? s.todos.jeongun : d.todos.jeongun,
-        yoonseul:(s.todos && Array.isArray(s.todos.yoonseul)) ? s.todos.yoonseul : d.todos.yoonseul
+        jeongun:  normTodos(s.todos && s.todos.jeongun,  d.todos.jeongun,  false),
+        jiseon:   normTodos(s.todos && s.todos.jiseon,   d.todos.jiseon,   false),
+        yoonseul: normTodos(s.todos && s.todos.yoonseul, d.todos.yoonseul, true)
       },
-      stars: Object.assign({ jiseon:0, jeongun:0, yoonseul:0 }, s.stars || {}),
+      stars: Object.assign({ jeongun:0, jiseon:0, yoonseul:0 }, s.stars || {}),
       shopping: Array.isArray(s.shopping) ? s.shopping : d.shopping,
       memos: Array.isArray(s.memos) ? s.memos : d.memos
     };
@@ -914,6 +962,14 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
   /* ---------------- day panel ---------------- */
   const dpList = document.getElementById("dpList");
   const eventForm = document.getElementById("eventForm");
+  let editingEventId = null;
+
+  const WHO_OPTS = [
+    ["jeongun","👨 정윤"],["jiseon","👩 지선"],["yoonseul","👧 윤슬"],["family","👨‍👩‍👧 가족"]
+  ];
+  function whoOptions(sel){
+    return WHO_OPTS.map(o => '<option value="' + o[0] + '"' + (o[0] === sel ? " selected" : "") + '>' + o[1] + '</option>').join("");
+  }
 
   function renderDayPanel(){
     const d = parseISO(selected);
@@ -923,18 +979,31 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     document.getElementById("dpCount").textContent = evs.length + "개";
 
     if(!evs.length){
+      editingEventId = null;
       dpList.innerHTML = '<div class="empty">아직 일정이 없어요. 오른쪽 <b>＋ 일정 추가</b>로 바로 넣어 보세요 🌱</div>';
       return;
     }
     dpList.innerHTML = evs.map(e => {
+      if(e.id === editingEventId){
+        return '<form class="dp-edit" data-edit-form="' + esc(e.id) + '">'
+          + '<input class="fld" type="time" name="time" value="' + esc(e.time || "") + '" aria-label="시간">'
+          + '<input class="fld" type="text" name="title" value="' + esc(e.title) + '" aria-label="일정 제목" maxlength="60" required>'
+          + '<select class="fld" name="who" aria-label="담당자">' + whoOptions(e.who) + '</select>'
+          + '<button class="mini" type="submit">저장</button>'
+          + '<button class="mini quiet" type="button" data-edit-cancel="1">취소</button>'
+          + '</form>';
+      }
       const m = memberOf(e.who);
       return '<div class="dp-item">'
         + '<span class="dp-time' + (e.time ? "" : " none") + '">' + (e.time ? esc(e.time) : "종일") + '</span>'
         + '<span class="dp-title">' + esc(e.title) + '</span>'
         + '<span class="dp-who t-' + toneOf(e.who) + '">' + esc(m.name) + '</span>'
+        + '<button type="button" class="edit" data-edit-event="' + esc(e.id) + '" aria-label="' + esc(e.title) + ' 수정">✏️</button>'
         + '<button type="button" class="del" data-del-event="' + esc(e.id) + '" aria-label="' + esc(e.title) + ' 삭제">✕</button>'
         + '</div>';
     }).join("");
+    const tf = dpList.querySelector('[data-edit-form] input[name="title"]');
+    if(tf){ try{ tf.focus(); tf.setSelectionRange(tf.value.length, tf.value.length); }catch(err){} }
   }
 
   document.getElementById("btnAddEvent").addEventListener("click", () => {
@@ -951,6 +1020,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     const titleEl = document.getElementById("evTitle");
     const title = titleEl.value.trim();
     if(!title){ titleEl.focus(); return; }
+    if(editingEventId){ editingEventId = null; }
     state.events.push({
       id: uid(), date: selected,
       time: document.getElementById("evTime").value,
@@ -963,11 +1033,42 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     toast("일정을 추가했어요 ✨");
   });
   dpList.addEventListener("click", (ev) => {
+    const ed = ev.target.closest("[data-edit-event]");
+    if(ed){
+      editingEventId = ed.dataset.editEvent;
+      renderDayPanel();
+      return;
+    }
+    if(ev.target.closest("[data-edit-cancel]")){
+      editingEventId = null;
+      renderDayPanel();
+      return;
+    }
     const btn = ev.target.closest("[data-del-event]");
     if(!btn) return;
+    if(editingEventId === btn.dataset.delEvent) editingEventId = null;
     state.events = state.events.filter(e => e.id !== btn.dataset.delEvent);
     save(); renderCalendar(); renderDayPanel(); renderHeader(); renderUpcoming();
     toast("일정을 지웠어요");
+  });
+
+  // 일정 수정 저장
+  dpList.addEventListener("submit", (ev) => {
+    const form = ev.target.closest("[data-edit-form]");
+    if(!form) return;
+    ev.preventDefault();
+    const item = state.events.find(x => x.id === form.dataset.editForm);
+    if(!item){ editingEventId = null; renderDayPanel(); return; }
+    const titleEl = form.querySelector('input[name="title"]');
+    const title = titleEl.value.trim();
+    if(!title){ titleEl.focus(); return; }
+    item.time = form.querySelector('input[name="time"]').value;
+    item.title = title;
+    item.who = form.querySelector('select[name="who"]').value;
+    editingEventId = null;
+    save();
+    renderCalendar(); renderDayPanel(); renderHeader(); renderUpcoming();
+    toast("일정을 수정했어요 ✏️");
   });
 
   /* ---------------- upcoming ---------------- */
@@ -1003,6 +1104,20 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
       + '<span>잘했어! ' + esc(name) + ' 오늘 미션 클리어 🎉</span></div>';
   }
 
+  let yAddFreq = "once";   // 윤슬 카드 추가 폼의 구분(기본: 가끔/오늘)
+
+  function todoItemHTML(k, t){
+    const note = t.note ? '<span class="todo-note">⏰ ' + esc(t.note) + '</span>' : '';
+    return '<div class="todo' + (t.done ? " done" : "") + '">'
+      + '<button type="button" class="cbx" role="checkbox" aria-checked="' + (t.done ? "true" : "false") + '"'
+      + ' data-toggle="' + k + '" data-todo="' + esc(t.id) + '" aria-label="' + esc(t.text) + ' 완료 표시">'
+      + '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.8l4.2 4.2L19 7.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+      + '</button>'
+      + '<div class="todo-body"><div class="todo-label">' + esc(t.text) + '</div>' + note + '</div>'
+      + '<button type="button" class="del" data-del-todo="' + esc(t.id) + '" data-who="' + k + '" aria-label="' + esc(t.text) + ' 삭제">✕</button>'
+      + '</div>';
+  }
+
   function renderMembers(){
     memberCards.innerHTML = MEMBER_ORDER.map(k => {
       const m = MEMBERS[k];
@@ -1012,20 +1127,38 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
       const pct = total ? Math.round(done/total*100) : 0;
       const allDone = total > 0 && done === total;
       const stars = state.stars[k] || 0;
+      const isY = (k === "yoonseul");
+      const daily = todos.filter(t => t.freq === "daily");
+      const once  = todos.filter(t => t.freq !== "daily");
 
-      const items = todos.length
-        ? todos.map(t => {
-            const note = t.note ? '<span class="todo-note">⏰ ' + esc(t.note) + '</span>' : '';
-            return '<div class="todo' + (t.done ? " done" : "") + '">'
-              + '<button type="button" class="cbx" role="checkbox" aria-checked="' + (t.done ? "true" : "false") + '"'
-              + ' data-toggle="' + k + '" data-todo="' + esc(t.id) + '" aria-label="' + esc(t.text) + ' 완료 표시">'
-              + '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.8l4.2 4.2L19 7.2" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-              + '</button>'
-              + '<div class="todo-body"><div class="todo-label">' + esc(t.text) + '</div>' + note + '</div>'
-              + '<button type="button" class="del" data-del-todo="' + esc(t.id) + '" data-who="' + k + '" aria-label="' + esc(t.text) + ' 삭제">✕</button>'
-              + '</div>';
-          }).join("")
-        : '<div class="empty">할 일을 추가해 보세요</div>';
+      let items;
+      if(isY){
+        items = '<div class="todos tsect" data-sect="daily">'
+            + '<div class="tsect-head"><span class="tsect-title">🔁 매일 하는 일</span>'
+            +   '<span class="tsect-count" data-seccount="daily">' + daily.filter(t=>t.done).length + '/' + daily.length + '</span></div>'
+            + (daily.length ? daily.map(t => todoItemHTML(k, t)).join("") : '<div class="empty">매일 루틴을 추가해 보세요</div>')
+            + '</div>'
+            + '<div class="todos tsect" data-sect="once">'
+            + '<div class="tsect-head"><span class="tsect-title">📌 가끔 · 오늘 할 일</span>'
+            +   '<span class="tsect-count" data-seccount="once">' + once.filter(t=>t.done).length + '/' + once.length + '</span></div>'
+            + (once.length ? once.map(t => todoItemHTML(k, t)).join("") : '<div class="empty">오늘 할 일을 추가해 보세요</div>')
+            + '</div>';
+      } else {
+        items = '<div class="todos">'
+            + (todos.length ? todos.map(t => todoItemHTML(k, t)).join("") : '<div class="empty">할 일을 추가해 보세요</div>')
+            + '</div>';
+      }
+
+      const addRow = '<form class="addrow" data-add-todo="' + k + '"' + (isY ? ' data-freq="' + yAddFreq + '"' : '') + '>'
+        + (isY
+            ? '<div class="freqtog" role="group" aria-label="추가할 일 구분">'
+              + '<button type="button" data-freq-pick="daily" class="' + (yAddFreq === "daily" ? "on" : "") + '" aria-pressed="' + (yAddFreq === "daily") + '">매일</button>'
+              + '<button type="button" data-freq-pick="once" class="' + (yAddFreq === "daily" ? "" : "on") + '" aria-pressed="' + (yAddFreq !== "daily") + '">오늘</button>'
+              + '</div>'
+            : '')
+        + '<input class="fld" type="text" placeholder="' + (isY ? "할 일 추가 (예: 책 20분 읽기)" : "할 일 추가") + '" aria-label="' + esc(m.name) + ' 할 일 추가" maxlength="50" required>'
+        + '<button class="mini" type="submit">추가</button>'
+        + '</form>';
 
       return '<section class="card mcard t-' + m.tone + '" data-card="' + k + '" aria-labelledby="mn-' + k + '">'
         + '<div class="m-head">'
@@ -1034,24 +1167,35 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
         +     (m.role ? '<div class="m-role">' + esc(m.role) + '</div>' : '') + '</div>'
         +   '<div class="m-stars" data-stars="' + k + '" aria-label="모은 별 ' + stars + '개"><span class="s" aria-hidden="true">★</span>' + stars + '</div>'
         + '</div>'
-        + '<div class="prog"><div class="prog-top"><span>' + (k === "yoonseul" ? "📚 오늘의 숙제 &amp; 루틴" : "오늘의 할 일") + '</span>'
+        + '<div class="prog"><div class="prog-top"><span>' + (isY ? "📚 오늘의 루틴" : "오늘의 할 일") + '</span>'
         +   '<b data-prog="' + k + '">' + done + '/' + total + ' 완료</b></div>'
         +   '<div class="track" role="progressbar" aria-valuemin="0" aria-valuemax="' + total + '" aria-valuenow="' + done + '" aria-label="' + esc(m.name) + ' 할 일 진행률">'
         +     '<div class="fill" data-fill="' + k + '" style="width:' + pct + '%"></div></div>'
         + '</div>'
-        + '<div class="todos">' + items + '</div>'
-        + (k === "yoonseul" ? '<div class="allergy"><span aria-hidden="true">🚫</span>갑각류 · 견과류 주의</div>' : '')
+        + items
         + (allDone ? celebrationLine(m.name) : '')
-        + '<form class="addrow" data-add-todo="' + k + '">'
-        +   '<input class="fld" type="text" placeholder="' + (k === "yoonseul" ? "숙제·준비물 추가" : "할 일 추가") + '" aria-label="' + esc(m.name) + ' 할 일 추가" maxlength="50" required>'
-        +   '<button class="mini" type="submit">추가</button>'
-        + '</form>'
-        + '<div class="mfooter"><span class="hint">체크할 때마다 <b>★ +1</b> 모아요</span><span class="stamp" aria-hidden="true">' + (allDone ? "🏅" : "✏️") + '</span></div>'
+        + addRow
+        + '<div class="mfooter"><span class="hint">' + (isY ? '체크마다 <b>★ +1</b> · 매일 루틴은 자정에 새로 시작' : '체크할 때마다 <b>★ +1</b> 모아요') + '</span><span class="stamp" aria-hidden="true">' + (allDone ? "🏅" : "✏️") + '</span></div>'
         + '</section>';
     }).join("");
   }
 
   memberCards.addEventListener("click", (ev) => {
+    const fp = ev.target.closest("[data-freq-pick]");
+    if(fp){
+      const form = fp.closest("[data-add-todo]");
+      yAddFreq = fp.dataset.freqPick === "daily" ? "daily" : "once";
+      if(form){
+        form.dataset.freq = yAddFreq;
+        form.querySelectorAll("[data-freq-pick]").forEach(b => {
+          const on = b.dataset.freqPick === yAddFreq;
+          b.classList.toggle("on", on);
+          b.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+      }
+      return;
+    }
+
     const cb = ev.target.closest("[data-toggle]");
     if(cb){
       const k = cb.dataset.toggle, id = cb.dataset.todo;
@@ -1076,6 +1220,12 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
       card.querySelector('[data-prog="' + k + '"]').textContent = done + "/" + total + " 완료";
       card.querySelector('[data-fill="' + k + '"]').style.width = Math.round(done/total*100) + "%";
       card.querySelector('[role="progressbar"]').setAttribute("aria-valuenow", String(done));
+      const dd = state.todos[k].filter(t => t.freq === "daily");
+      const oo = state.todos[k].filter(t => t.freq !== "daily");
+      const dc = card.querySelector('[data-seccount="daily"]');
+      const oc = card.querySelector('[data-seccount="once"]');
+      if(dc) dc.textContent = dd.filter(t => t.done).length + "/" + dd.length;
+      if(oc) oc.textContent = oo.filter(t => t.done).length + "/" + oo.length;
       const starsEl = card.querySelector('[data-stars="' + k + '"]');
       starsEl.innerHTML = '<span class="s" aria-hidden="true">★</span>' + state.stars[k];
       starsEl.setAttribute("aria-label", "모은 별 " + state.stars[k] + "개");
@@ -1119,9 +1269,10 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     const input = form.querySelector("input");
     const text = input.value.trim();
     if(!text) return;
-    state.todos[k].push({ id: uid(), text: text, done: false });
+    const freq = (k === "yoonseul" && form.dataset.freq === "daily") ? "daily" : "once";
+    state.todos[k].push({ id: uid(), text: text, done: false, freq: freq });
     save(); renderMembers(); renderHeader();
-    toast("할 일을 추가했어요");
+    toast(freq === "daily" ? "매일 루틴에 추가했어요 🔁" : "할 일을 추가했어요");
     const newInput = memberCards.querySelector('[data-card="' + k + '"] input');
     if(newInput) newInput.focus();
   });
@@ -1307,6 +1458,36 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     toast("처음 상태로 되돌렸어요");
   });
 
+  /* ---------------- 매일 루틴 자정 리셋 ---------------- */
+  // 날짜(로컬 기준)가 바뀌면 '매일' 항목의 체크만 해제. 별(★) 점수는 건드리지 않음.
+  function applyDailyReset(silent){
+    const t = todayISO();
+    if(state.lastResetDate === t) return false;
+    if(!state.lastResetDate){          // 첫 실행/마이그레이션: 기준일만 기록
+      state.lastResetDate = t;
+      save();
+      return false;
+    }
+    let cleared = 0;
+    MEMBER_ORDER.forEach(k => {
+      (state.todos[k] || []).forEach(it => {
+        if(it.freq === "daily" && it.done){ it.done = false; cleared++; }
+      });
+    });
+    state.lastResetDate = t;
+    save();
+    if(!silent && cleared > 0) toast("날짜가 바뀌어 매일 루틴을 새로 시작했어요 🌙 (별은 그대로)");
+    return cleared > 0;
+  }
+  function checkMidnight(){
+    if(applyDailyReset(false)){
+      renderMembers(); renderHeader();
+    }
+  }
+  document.addEventListener("visibilitychange", () => { if(!document.hidden) checkMidnight(); });
+  window.addEventListener("focus", checkMidnight);
+  setInterval(checkMidnight, 60000);
+
   /* ---------------- boot ---------------- */
   function renderAll(){
     renderHeader();
@@ -1319,6 +1500,7 @@ select.fld{appearance:none;background-image:linear-gradient(45deg,transparent 50
     renderMemos();
   }
 
+  applyDailyReset(true);
   renderAll();
 })();
 </script>
