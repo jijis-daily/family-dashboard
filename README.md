@@ -2,7 +2,7 @@
 
 지선 · 정윤 · 윤슬 세 식구의 월 캘린더와 오늘 일정을 한 화면에서 보는 가족 대시보드입니다.
 
-- 웹: https://jisunyn-design.github.io/family-dashboard/
+- 웹: https://jijis-daily.github.io/family-dashboard/
 - 파일: `index.html` (단일 파일, 외부 라이브러리 없음)
 
 ## 수정 방법
